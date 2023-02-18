@@ -152,13 +152,19 @@ function getEllipseInput(id){
     return areaFirstInput;
 }
 // create table
-function displayData(serial,name,total){
+function displayData(serial,name,total,button){
     const container = document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML = `
     <td>${serial}</td>
     <td>${name}</td>
     <td>${total}</td>
+    <button class="btn btn-primary lowercase"><span class = "uppercase">c</span>onvert to m<sup>2</sup></button>
     `;
     container.appendChild(tr);
 }
+
+// navigate to another page
+document.getElementById('blog').addEventListener('click', function(){
+    window.location.href = 'blog.html';
+})
