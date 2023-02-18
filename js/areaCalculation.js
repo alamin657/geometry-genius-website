@@ -7,6 +7,9 @@ document.getElementById('first-calculate-btn').addEventListener('click',function
     const areaSecondInput = getTraingleInput('triangle-second-input');
     const areaTotal = 0.5 * areaFirstInput*areaSecondInput;
     displayData(serial, areaText, areaTotal.toFixed(2));
+    // clear input value
+    document.getElementById('triangle-first-input').value = '';
+    document.getElementById('triangle-second-input').value = '';
 })
 
 // using function first-card calculate 
@@ -27,6 +30,10 @@ document.getElementById('second-calculate-btn').addEventListener('click',functio
     const areaSecondInput = getRectangleInput('rectangle-second-input');
     const areaTotal = areaFirstInput * areaSecondInput;
     displayData(serial,areaText,areaTotal.toFixed(2));
+    // clear input value
+    document.getElementById('rectangle-first-input').value = '';
+    document.getElementById('rectangle-second-input').value = '';
+
 })
 // use function second-card-calculate
 function getRectangle(id){
@@ -39,25 +46,32 @@ function getRectangleInput(id){
     return areaFirstInput;
 }
 // third card
-
 document.getElementById('third-calculate-btn').addEventListener('click',function(){
     serial+=1;
-    const areaText = getParallelogram('paralleogram-name');
-    const firstInput = getParallelogramInput('parallelogram-first-input');
-    const secondInput = getParallelogramInput('paralleologram-second-input');
+    const areaText = getThird('third-name');
+    const firstInput = getThirdInput('first-input');
+    const secondInput = getThirdInput('second-input');
     const areaTotal = firstInput * secondInput;
-    displayData(serial,areaText,areaTotal.toFixed(2));
+    displayData(serial, areaText, areaTotal.toFixed(2));
+     // clear input value
+     document.getElementById('first-input').value = '';
+     document.getElementById('second-input').value = '';
+   
+    
+   
 })
 // use function third-card calculate
-function getParallelogram(id){
+function getThird(id){
     const areaText = document.getElementById(id).innerText;
     return areaText;
 }
-function getParallelogramInput(id){
-    const firstInputString = document.getElementById(id).value;
-    const firstInput = parseFloat(firstInputString);
+function getThirdInput(id){
+    const areaFirstInputString = document.getElementById(id).value;
+    const firstInput = parseFloat(areaFirstInputString);
+    
     return firstInput;
 }
+
 // forth card
 document.getElementById('forth-calculate-btn').addEventListener('click',function(){
     serial+=1;
@@ -66,6 +80,9 @@ document.getElementById('forth-calculate-btn').addEventListener('click',function
     const areaSecondInput = getRhombusInput('rhombus-second-input');
     const areaTotal = 0.5 * areaFirstInput*areaSecondInput;
     displayData(serial, areaText, areaTotal.toFixed(2));
+      // clear input value
+      document.getElementById('rhombus-first-input').value = '';
+      document.getElementById('rhombus-second-input').value = '';
 })
 // use function forth card calculate
 function getRhombus(id){
@@ -85,6 +102,9 @@ document.getElementById('fipth-calculate-btn').addEventListener('click',function
     const areaSecondInput = getRhombusInput('pentagon-second-input');
     const areaTotal = 0.5 * areaFirstInput*areaSecondInput;
     displayData(serial, areaText, areaTotal.toFixed(2));
+      // clear input value
+      document.getElementById('pentagon-first-input').value = '';
+      document.getElementById('pentagon-second-input').value = '';
 })
 // use function fipth card calculation
 function getPentagon(id){
@@ -97,14 +117,17 @@ function getPentagonInput(id){
     return areaFirstInput;
 }
 // six-card
-document.getElementById('six-card-calculate').addEventListener('click',function(){
+document.getElementById('six-calculate-btn').addEventListener('click',function(){
     serial+=1;
     const areaText = getEllipse('ellipse-name');
     const areaFirstInput = getEllipseInput('ellipse-first-input');
     const areaSecondInput = getEllipseInput('ellipse-second-input');
     const areaTotal = 3.14 * areaFirstInput * areaSecondInput;
-    
     displayData(serial, areaText, areaTotal.toFixed(2));
+      // clear input value
+      document.getElementById('ellipse-first-input').value = '';
+      document.getElementById('ellipse-second-input').value = '';
+   
 })
 // use function six-card calculate
 function getEllipse(id){
@@ -114,6 +137,7 @@ function getEllipse(id){
 function getEllipseInput(id){
     const areaFirstInputString = document.getElementById(id).value;
     const areaFirstInput = parseFloat(areaFirstInputString);
+    
     return areaFirstInput;
 }
 // create table
