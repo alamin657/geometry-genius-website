@@ -5,11 +5,18 @@ document.getElementById('first-calculate-btn').addEventListener('click',function
     const areaText = getTraingle('triangle-name');
     const areaFirstInput = getTraingleInput('triangle-first-input');
     const areaSecondInput = getTraingleInput('triangle-second-input');
+    // validation check zero or string
+    if(areaFirstInput < 0 || areaFirstInput == '' || areaSecondInput < 0 || areaSecondInput == ''){
+        alert('Inputs must be positive numbers');
+        return;
+    }
     const areaTotal = 0.5 * areaFirstInput*areaSecondInput;
     displayData(serial, areaText, areaTotal.toFixed(2));
     // clear input value
     document.getElementById('triangle-first-input').value = '';
     document.getElementById('triangle-second-input').value = '';
+   
+    
 })
 
 // using function first-card calculate 
@@ -28,6 +35,11 @@ document.getElementById('second-calculate-btn').addEventListener('click',functio
     const areaText = getRectangle('rectangle-name');
     const areaFirstInput = getRectangleInput('rectangle-first-input');
     const areaSecondInput = getRectangleInput('rectangle-second-input');
+    // validation check zero or string
+    if(areaFirstInput == '' ||  areaSecondInput == 0){
+        alert('Inputs must be positive numbers');
+        return;
+    }
     const areaTotal = areaFirstInput * areaSecondInput;
     displayData(serial,areaText,areaTotal.toFixed(2));
     // clear input value
@@ -127,7 +139,6 @@ document.getElementById('six-calculate-btn').addEventListener('click',function()
       // clear input value
       document.getElementById('ellipse-first-input').value = '';
       document.getElementById('ellipse-second-input').value = '';
-   
 })
 // use function six-card calculate
 function getEllipse(id){
