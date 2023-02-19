@@ -15,7 +15,8 @@ document.getElementById('first-calculate-btn').addEventListener('click',function
     // clear input value
     document.getElementById('triangle-first-input').value = '';
     document.getElementById('triangle-second-input').value = '';
-    // random
+    // random color generate
+   const randomgenerate =  randomColor('random');
 });
 // using function first-card calculate 
 function getTraingle(id){
@@ -43,6 +44,8 @@ document.getElementById('second-calculate-btn').addEventListener('click',functio
     // clear input value
     document.getElementById('rectangle-first-input').value = '';
     document.getElementById('rectangle-second-input').value = '';
+    // random color generate
+    const randomgenerate =  randomColor('randomSecond');
 
 })
 // use function second-card-calculate
@@ -66,6 +69,8 @@ document.getElementById('third-calculate-btn').addEventListener('click',function
      // clear input value
      document.getElementById('first-input').value = '';
      document.getElementById('second-input').value = '';
+      // random color generate
+    const randomgenerate =  randomColor('randomThree');
    
     
    
@@ -93,6 +98,8 @@ document.getElementById('forth-calculate-btn').addEventListener('click',function
       // clear input value
       document.getElementById('rhombus-first-input').value = '';
       document.getElementById('rhombus-second-input').value = '';
+       // random color generate
+    const randomgenerate =  randomColor('randomFour');
 })
 // use function forth card calculate
 function getRhombus(id){
@@ -115,6 +122,8 @@ document.getElementById('fipth-calculate-btn').addEventListener('click',function
       // clear input value
       document.getElementById('pentagon-first-input').value = '';
       document.getElementById('pentagon-second-input').value = '';
+       // random color generate
+    const randomgenerate =  randomColor('randomFive');
 })
 // use function fipth card calculation
 function getPentagon(id){
@@ -137,6 +146,8 @@ document.getElementById('six-calculate-btn').addEventListener('click',function()
       // clear input value
       document.getElementById('ellipse-first-input').value = '';
       document.getElementById('ellipse-second-input').value = '';
+       // random color generate
+    const randomgenerate =  randomColor('randomSix');
 })
 // use function six-card calculate
 function getEllipse(id){
@@ -167,3 +178,11 @@ document.getElementById('blog').addEventListener('click', function(){
     window.location.href = 'blog.html';
 })
 
+//Random color generate
+function randomColor(id){
+    const colorButton = document.getElementById(id);
+    colorButton.addEventListener('mouseover',function(){
+        const color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+        colorButton.style.backgroundColor = color;
+    })
+}

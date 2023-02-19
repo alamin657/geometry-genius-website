@@ -15,7 +15,7 @@
 <body>
     <header>
         <!-- Navbar section -->
-        <div class="navbar bg-base-100 shadow-2xl lg:px-12 ">
+        <div class="bg-blue-200 navbar  lg:px-12 ">
           <div class="flex-1">
             <a class="text-xl"><span class="font-bold"> Interactive</span><br>Geometry Genius</a> 
           </div>
@@ -29,7 +29,7 @@
         <section class="lg:flex" >
             <div class=" w-full lg:w-[60%] mt-12 grid  lg:grid-cols-3 gap-6 px-12">
           <!-- first card  -->
-           <div  class="card card-compact w-full bg-base-100 shadow-xl">
+           <div  id="random" class="card card-compact w-full bg-base-100 shadow-xl">
             <figure>
               <img class="p-4" src="images/triangle.png" alt="">
             </figure>
@@ -61,13 +61,13 @@
             </div>
           </div>
           <!-- second card  -->
-          <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <div id="randomSecond" class="card card-compact w-full bg-base-100 shadow-xl">
             <figure>
              <img class="p-4
              " src="images/rectangle.png" alt="">
             </figure>
             <div class="card-body">
-              <h2 id="rectangle-name " class="text-center text-3xl">Rectangle</h2>
+              <h2 class="text-center text-3xl" id="rectangle-name">Rectangle</h2>
               <p class="text-center text-xl">
                 Area (A) = w*I
               </p>
@@ -93,7 +93,7 @@
             </div>
           </div>
           <!-- third card  -->
-          <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <div id="randomThree" class="card card-compact w-full bg-base-100 shadow-xl">
             <figure>
               <img class="p-4" src="images/parallelogram.png" alt="">
             </figure>
@@ -125,7 +125,7 @@
             </div>
           </div>
           <!-- fourth card  -->
-          <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <div id="randomFour" class="card card-compact w-full bg-base-100 shadow-xl">
             <figure>
               <img class="p-4" src="images/rhombus.png" alt="">
             </figure>
@@ -155,7 +155,7 @@
             </div>
           </div>
           <!-- fipth card  -->
-          <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <div id="randomFive" class="card card-compact w-full bg-base-100 shadow-xl">
             <figure>
              <img class="p-4 mt-8" src="images/pentagon.png" alt="">
             </figure>
@@ -186,7 +186,7 @@
             </div>
           </div>
           <!-- six card -->
-          <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <div id="randomSix" class="card card-compact w-full bg-base-100 shadow-xl">
             <figure>
               <img class="p-4" src="images/ellipse.png" alt="">
             </figure>
@@ -224,7 +224,7 @@
             <h1 id="area-calculation" class="text-3xl text-center font-bold underline mt-12">
               Area Calculation 
           </div>
-          <div  class="overflow-x-auto">
+          <div  class="overflow-x-auto mt-4">
             <table  class="table w-full ">
               <thead >
 
