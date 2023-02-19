@@ -15,10 +15,8 @@ document.getElementById('first-calculate-btn').addEventListener('click',function
     // clear input value
     document.getElementById('triangle-first-input').value = '';
     document.getElementById('triangle-second-input').value = '';
-   
-    
-})
-
+    // random
+});
 // using function first-card calculate 
 function getTraingle(id){
     const areaText = document.getElementById(id).innerText;
@@ -168,3 +166,4 @@ function displayData(serial,name,total,button){
 document.getElementById('blog').addEventListener('click', function(){
     window.location.href = 'blog.html';
 })
+

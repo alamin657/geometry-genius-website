@@ -15,9 +15,9 @@
 <body>
     <header>
         <!-- Navbar section -->
-        <div class="navbar bg-base-100 shadow-2xl  ">
+        <div class="navbar bg-base-100 shadow-2xl lg:px-12 ">
           <div class="flex-1">
-            <a class="text-xl">Interactive<br>Geometry Genius</a> 
+            <a class="text-xl"><span class="font-bold"> Interactive</span><br>Geometry Genius</a> 
           </div>
           <div>
             <button id="blog" class="btn btn-primary">Blog</button>
@@ -26,18 +26,16 @@
       </header>
       <main>
         <!-- card-section -->
-        <section class="flex flex-1">
-            <div
-          class="w-full lg:w-[60%] mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-12"
-        >
+        <section class="lg:flex" >
+            <div class=" w-full lg:w-[60%] mt-12 grid  lg:grid-cols-3 gap-6 px-12">
           <!-- first card  -->
-           <div class="card card-compact w-full bg-base-100 shadow-xl">
+           <div  class="card card-compact w-full bg-base-100 shadow-xl">
             <figure>
               <img class="p-4" src="images/triangle.png" alt="">
             </figure>
             <div class="card-body">
-              <h2 class="card-title" id="triangle-name">Triangle</h2>
-              <p>
+              <h2 class="text-center text-3xl" id="triangle-name">Triangle</h2>
+              <p class="text-center text-xl">
                 Area (A) = 0.5*b*h
               </p>
               <div class="flex flex-1">
@@ -54,7 +52,7 @@
                 class="input input-bordered input-sm w-full max-w-xs"
               /><span class="px-2 mt-2">cm</span>
               </div>
-              <div class="card-actions justify-end">
+              <div class="card-actions justify-center">
                 <button class="btn btn-primary px-12" id="first-calculate-btn">
                   Calculate
                 </button>
@@ -69,8 +67,8 @@
              " src="images/rectangle.png" alt="">
             </figure>
             <div class="card-body">
-              <h2 id="rectangle-name" class="card-title">Rectangle</h2>
-              <p>
+              <h2 id="rectangle-name " class="text-center text-3xl">Rectangle</h2>
+              <p class="text-center text-xl">
                 Area (A) = w*I
               </p>
               <div class="flex flex-1">
@@ -87,7 +85,7 @@
                 class="input input-bordered input-sm w-full max-w-xs"
               /><span class="px-2 mt-2">cm</span>
               </div>
-              <div class="card-actions justify-end">
+              <div class="card-actions justify-center">
                 <button class="btn btn-primary px-12" id="second-calculate-btn">
                  Calculate
                 </button>
@@ -99,12 +97,12 @@
             <figure>
               <img class="p-4" src="images/parallelogram.png" alt="">
             </figure>
-            <div class="card-body">
-              <h2 class="card-title" id="third-name">Parallelogram</h2>
-              <p>
+            <div class="mt-4">
+              <h2 class="text-center text-2xl" id="third-name">Parallelogram</h2>
+              <p class="text-center text-xl">
                 Area (A) = b * h
               </p>
-              <p>b=10cm, h=12cm</p>
+              <p class="text-center text-xl">b=10cm, h=12cm</p>
               <div class="flex flex-1">
                 <input
                 type="text"
@@ -119,8 +117,8 @@
                 class="input input-bordered input-sm w-full max-w-xs"
               /><span class="px-2 mt-2">cm</span>
               </div>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary px-12" id="third-calculate-btn">
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary px-12 mt-2" id="third-calculate-btn">
                   Calculate
                 </button>
               </div>
@@ -132,10 +130,10 @@
               <img class="p-4" src="images/rhombus.png" alt="">
             </figure>
             <div class="card-body">
-              <h2 id="rhombus-name" class="card-title">Rhombus</h2>
-              <p>Area(A) = 0.5*d<sub>1</sub>*d<sub>2</sub></p>              
-              <p>d1 = 16cm d2=8cm</p>
-              <div class="flex flex-1">
+              <h2 id="rhombus-name" class="text-center text-3xl">Rhombus</h2>
+              <p class="text-center text-xl">Area(A) = 0.5*d<sub>1</sub>*d<sub>2</sub></p>              
+              <p class="text-center text-xl">d<sub>1</sub> = 16cm d<sub>2</sub>=8cm</p>
+              <div class="flex flex-1 py-2">
                 <input
                 type="text"
                 id="rhombus-first-input"
@@ -149,7 +147,7 @@
                 class="input input-bordered input-sm w-full max-w-xs"
               /><span class="px-2 mt-2">cm</span>
               </div>
-              <div class="card-actions justify-end">
+              <div class="card-actions justify-center">
                 <button class="btn btn-primary px-12" id="forth-calculate-btn">
                   Calculate
                 </button>
@@ -159,13 +157,13 @@
           <!-- fipth card  -->
           <div class="card card-compact w-full bg-base-100 shadow-xl">
             <figure>
-             <img class="p-4" src="images/pentagon.png" alt="">
+             <img class="p-4 mt-8" src="images/pentagon.png" alt="">
             </figure>
-            <div class="card-body">
-              <h2 class="card-title" id="pentagon-name">Pentagon</h2>
-              <p>Area(A) = 0.5*p*b</p>
-              <p>p = 6cm, b = 10cm</p>
-              <div class="flex flex-1">
+            <div >
+              <h2 class="text-center text-3xl" id="pentagon-name">Pentagon</h2>
+              <p class="text-center text-xl">Area(A) = 0.5*p*b</p>
+              <p class="text-center text-xl">p = 6cm, b = 10cm</p>
+              <div class="flex flex-1 px-4">
                 <input
                 type="text"
                 id="pentagon-first-input"
@@ -180,8 +178,8 @@
               /><span class="px-2 mt-2">cm</span>
               </div>
              
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary px-12" id="fipth-calculate-btn">
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary  px-12 mt-4 " id="fipth-calculate-btn">
                  Calculate
                 </button>
               </div>
@@ -193,9 +191,9 @@
               <img class="p-4" src="images/ellipse.png" alt="">
             </figure>
             <div class="card-body">
-              <h2 id="ellipse-name" class="card-title">Ellipse</h2>
-              <p>Area (A) =3.14*ab
-              <p>a = 10cm, b = 4cm</p>
+              <h2 id="ellipse-name" class="text-center text-3xl">Ellipse</h2>
+              <p class="text-center text-2xl">Area (A) =3.14*ab
+              <p class="text-center text-2xl">a = 10cm, b = 4cm</p>
               <div class="flex flex-1">
                 <input
                 type="text"
@@ -210,7 +208,7 @@
                 class="input input-bordered input-sm w-full max-w-xs"
               /><span class="px-2 mt-2">cm</span>
               </div>
-              <div class="card-actions justify-end">
+              <div class="card-actions justify-center">
                 <button class="btn btn-primary px-12" id="six-calculate-btn">
                  Calculate
                 </button>
@@ -221,7 +219,7 @@
         <!-- area-calculation -->
        
         <!-- table -->
-        <div class="cart-details w-full md:w-[40%] lg:w-[40%] mx-auto ">
+        <div class="border border-sky-500 m-12 w-full md:w-[40%] lg:w-[40%] mx-auto ">
           <div>
             <h1 id="area-calculation" class="text-3xl text-center font-bold underline mt-12">
               Area Calculation 
@@ -242,9 +240,6 @@
         </div> 
         </section>
       </main>
-      <!-- <script src="js/utilities.js"></script> -->
-      <script src="js/areaCalculation.js"></script>
-     
-      
+      <script src="js/areaCalculation.js"></script>     
 </body>
 </html>
